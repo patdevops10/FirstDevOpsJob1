@@ -2,7 +2,7 @@ FROM openjdk:13
 VOLUME /tmp
 EXPOSE 8080
 ADD ./target/FirstDevopsJob-0.0.1-SNAPSHOT.jar  FirstDevopsJob.jar
-ENTRYPOINT ["java","-jar" ,"/FirstDevopsJob.jar"]
+ENTRYPOINT ["java","-jar","/devops.jar"]
 
 
 FROM maven:3.6.3-jdk-11-slim AS build
